@@ -8,12 +8,12 @@ from urllib.parse import urlparse
 from greedybear.consts import PAYLOAD_REQUEST, SCANNER
 from greedybear.cronjobs.extraction.strategies import BaseExtractionStrategy
 from greedybear.cronjobs.extraction.utils import (
-    get_ioc_type,
     iocs_from_hits,
     normalize_credential_field,
-    parse_timestamp,
     threatfox_submission,
 )
+
+from greedybear.utils import get_ioc_type, parse_timestamp
 from greedybear.cronjobs.repositories import (
     CowrieSessionRepository,
     IocRepository,

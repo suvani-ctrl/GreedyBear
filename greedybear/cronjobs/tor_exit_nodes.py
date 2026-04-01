@@ -3,7 +3,7 @@ import re
 import requests
 
 from greedybear.cronjobs.base import Cronjob
-from greedybear.cronjobs.extraction.utils import is_valid_ipv4
+from greedybear.utils import is_valid_ipv4
 from greedybear.cronjobs.repositories import IocRepository
 from greedybear.cronjobs.repositories.tor import TorRepository
 from greedybear.enums import IpReputation
